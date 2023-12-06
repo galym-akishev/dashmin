@@ -8,8 +8,6 @@ $APPLICATION->AddChainItem($APPLICATION->GetTitle(), $APPLICATION->GetCurDir());
 $APPLICATION->SetPageProperty("keywords", "Регистрация");
 ?>
 
-Registration page
-
 <?php $APPLICATION->IncludeComponent(
     "bitrix:main.register",
     "",
