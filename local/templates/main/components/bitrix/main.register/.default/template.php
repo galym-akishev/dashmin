@@ -20,7 +20,6 @@ if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)
     </p>
 <?php else:?>
 
-
 <div class="container-fluid">
     <div class="row h-100 align-items-center justify-content-center" style="min-height: 100vh;">
         <div class="col-12 col-sm-8 col-md-6 col-lg-5 col-xl-4">
@@ -29,6 +28,8 @@ if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)
                     <a href="/" class="">
                         <h3 class="text-primary"><i class="fa fa-hashtag me-2"></i>DASHMIN</h3>
                     </a>
+                </div>
+                <div>
                     <h3><?=GetMessage("AUTH_REGISTER")?></h3>
                 </div>
                 <?php
@@ -47,8 +48,6 @@ if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)
                     <?php if($arResult["BACKURL"] <> ''): ?>
                         <input type="hidden" name="backurl" value="<?=$arResult["BACKURL"]?>" />
                     <?php endif; ?>
-
-
                     <?php foreach ($arResult["SHOW_FIELDS"] as $FIELD): ?>
                                 <?php
                                     switch ($FIELD)
@@ -61,7 +60,6 @@ if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)
                                                         type="password"
                                                         name="REGISTER[<?=$FIELD?>]"
                                                         value="<?=$arResult["VALUES"][$FIELD]?>"
-                                                        autocomplete="off"
                                                         class="form-control"
                                                         placeholder=""
                                                 />
@@ -150,3 +148,11 @@ if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)
         </div>
     </div>
 </div>
+
+<script type="text/javascript">
+    try {
+        document.getElementById("LOGIN").focus();
+    }
+    catch(e) {
+    }
+</script>

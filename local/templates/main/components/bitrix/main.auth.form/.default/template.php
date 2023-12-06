@@ -32,9 +32,10 @@ if ($arResult['AUTHORIZED'])
                     <a href="/" class="">
                         <h3 class="text-primary"><i class="fa fa-hashtag me-2"></i>DASHMIN</h3>
                     </a>
+                </div>
+                <div>
                     <h3>Войти</h3>
                 </div>
-
                 <form name="<?= $arResult['FORM_ID'];?>" method="post" target="_top" action="<?= POST_FORM_ACTION_URI;?>">
 
                     <div class="form-floating mb-3">
