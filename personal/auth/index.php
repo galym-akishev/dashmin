@@ -8,8 +8,6 @@ $APPLICATION->AddChainItem($APPLICATION->GetTitle(), $APPLICATION->GetCurDir());
 $APPLICATION->SetPageProperty("keywords", "Авторизация");
 ?>
 
-Auth index page
-
 <?php $APPLICATION->IncludeComponent(
     "bitrix:main.auth.form",
     "",
