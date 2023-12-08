@@ -36,6 +36,9 @@ global $USER;
     Asset::getInstance()->addString("<link rel='preconnect' href='https://fonts.googleapis.com'>");
     Asset::getInstance()->addString("<link href='https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css' rel='stylesheet'>");
 
+    Asset::getInstance()->addString("<script src='https://code.jquery.com/jquery-3.4.1.min.js'></script>");
+    Asset::getInstance()->addString("<script src='https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js'></script>");
+
     Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . '/assets/lib/chart/chart.min.js');
     Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . '/assets/lib/easing/easing.min.js');
     Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . '/assets/lib/waypoints/waypoints.min.js');
@@ -44,8 +47,7 @@ global $USER;
     Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . '/assets/lib/tempusdominus/js/moment-timezone.min.js');
     Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . '/assets/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js');
     Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . '/assets/js/main.js');
-    Asset::getInstance()->addString("<script src='https://code.jquery.com/jquery-3.4.1.min.js'></script>");
-    Asset::getInstance()->addString("<script src='https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js'></script>");
+
     ?>
 
     <?php
@@ -78,15 +80,13 @@ global $USER;
                 </div>
             </div>
             <div class="navbar-nav w-100">
-                <a href="/personal/" class="nav-item nav-link active"><i class="fa fa-tachometer-alt me-2"></i>Dashboard</a>
-                <a href="/personal/tables/" class="nav-item nav-link"><i class="fa fa-table me-2"></i>Tables</a>
-                <a href="/personal/charts/" class="nav-item nav-link"><i class="fa fa-chart-bar me-2"></i>Charts</a>
+                <a href="/personal/" class="nav-item nav-link active"><i class="fa fa-tachometer-alt me-2"></i>Дашборд</a>
+                <a href="/personal/charts/" class="nav-item nav-link"><i class="fa fa-chart-bar me-2"></i>Диаграммы</a>
             </div>
         </nav>
     </div>
     <!-- Sidebar End -->
 
-    <!-- Content Start -->
     <div class="content">
         <!-- Navbar Start -->
         <nav class="navbar navbar-expand bg-light navbar-light sticky-top px-4 py-0">
@@ -96,9 +96,6 @@ global $USER;
             <a href="#" class="sidebar-toggler flex-shrink-0">
                 <i class="fa fa-bars"></i>
             </a>
-            <form class="d-none d-md-flex ms-4">
-                <input class="form-control border-0" type="search" placeholder="Search">
-            </form>
             <div class="navbar-nav align-items-center ms-auto">
                 <div class="nav-item dropdown">
                     <a href="/personal/" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">

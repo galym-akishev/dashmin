@@ -16,7 +16,6 @@ if (!$USER->IsAuthorized()) {
 }
 ?>
 
-<!-- Sale & Revenue Start -->
 <div class="container-fluid pt-4 px-4">
     <div class="row g-4">
         <div class="col-sm-6 col-xl-6">
@@ -50,6 +49,5 @@ if (!$USER->IsAuthorized()) {
         </div>
     </div>
 </div>
-<!-- Sale & Revenue End -->
 
 <?php require($_SERVER['DOCUMENT_ROOT'] . '/bitrix/footer.php'); ?>
