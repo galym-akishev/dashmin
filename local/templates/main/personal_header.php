@@ -80,8 +80,18 @@ global $USER;
                 </div>
             </div>
             <div class="navbar-nav w-100">
-                <a href="/personal/" class="nav-item nav-link active"><i class="fa fa-tachometer-alt me-2"></i>Дашборд</a>
-                <a href="/personal/charts/" class="nav-item nav-link"><i class="fa fa-chart-bar me-2"></i>Диаграммы</a>
+                <a
+                        href="/personal/"
+                        class="nav-item nav-link <?php if ($APPLICATION->GetCurPage() == '/personal/') echo('active')  ?>"
+                >
+                    <i class="fa fa-tachometer-alt me-2"></i>Дашборд
+                </a>
+                <a
+                        href="/personal/charts/"
+                        class="nav-item nav-link <?php if ($APPLICATION->GetCurPage() == '/personal/charts/') echo('active')  ?>"
+                >
+                    <i class="fa fa-chart-bar me-2"></i>Диаграммы
+                </a>
             </div>
         </nav>
     </div>
