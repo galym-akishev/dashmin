@@ -25,6 +25,9 @@ global $USER;
     <link rel="icon" type="image/x-icon" href="<?= SITE_TEMPLATE_PATH ?>/assets/img/favicon.png">
 
     <?php
+    Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . '/assets/js/jquery-3.4.1.min.js');
+    Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . '/assets/js/bootstrap.bundle.min.js');
+
     Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . '/assets/lib/owlcarousel/assets/owl.carousel.min.css');
     Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . '/assets/lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css');
     Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . '/assets/css/bootstrap.min.css');
@@ -36,8 +39,7 @@ global $USER;
     Asset::getInstance()->addString("<link rel='preconnect' href='https://fonts.googleapis.com'>");
     Asset::getInstance()->addString("<link href='https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css' rel='stylesheet'>");
 
-    Asset::getInstance()->addString("<script src='https://code.jquery.com/jquery-3.4.1.min.js'></script>");
-    Asset::getInstance()->addString("<script src='https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js'></script>");
+
 
     Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . '/assets/lib/chart/chart.min.js');
     Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . '/assets/lib/easing/easing.min.js');
@@ -100,7 +102,7 @@ global $USER;
     <div class="content">
         <!-- Navbar Start -->
         <nav class="navbar navbar-expand bg-light navbar-light sticky-top px-4 py-0">
-            <a href="index.html" class="navbar-brand d-flex d-lg-none me-4">
+            <a href="/personal/" class="navbar-brand d-flex d-lg-none me-4">
                 <h2 class="text-primary mb-0"><i class="fa fa-hashtag"></i></h2>
             </a>
             <a href="#" class="sidebar-toggler flex-shrink-0">
