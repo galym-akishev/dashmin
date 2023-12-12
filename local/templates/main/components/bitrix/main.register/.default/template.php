@@ -40,9 +40,12 @@ if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)
                                 str_replace("#FIELD_NAME#",
                                     "&quot;".GetMessage("REGISTER_FIELD_".$key)."&quot;",
                                     $error);
-
-                    ShowError(implode("<br />", $arResult["ERRORS"]));
                     ?>
+                    <div class="alert alert-danger">
+                    <?php foreach ($arResult['ERRORS'] as $error)
+                        echo $error . "<br />";
+                    ?>
+                    </div>
                 <?php endif ?>
                 <form method="post" action="<?=POST_FORM_ACTION_URI?>" name="regform" enctype="multipart/form-data">
                     <?php if($arResult["BACKURL"] <> ''): ?>
