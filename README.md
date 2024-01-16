@@ -31,7 +31,7 @@
 - Редакция продукта Bitrix - Стандарт
 - Главный модуль - 23.300.100
 - Веб сервер - Nginx
-- 
+
 ## Демо проекта
 <div id="header" align="center">
   <img src="local/templates/main/assets/img/screencast.gif"/>
